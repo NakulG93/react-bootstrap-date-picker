@@ -291,7 +291,7 @@ export default createReactClass({
       PropTypes.func
     ]),
     dateFormat: PropTypes.string, // 'MM/DD/YYYY', 'DD/MM/YYYY', 'YYYY/MM/DD', 'DD-MM-YYYY'
-    bsClass: PropTypes.string,
+    bsPrefix: PropTypes.string,
     bsSize: PropTypes.string,
     calendarContainer: PropTypes.object,
     id: PropTypes.string,
@@ -678,7 +678,7 @@ export default createReactClass({
 
     return <InputGroup
       ref="inputGroup"
-      bsClass={this.props.showClearButton ? this.props.bsClass : ''}
+      bsPrefix={this.props.showClearButton ? this.props.bsPrefix : ''}
       bsSize={this.props.bsSize}
       id={this.props.id ? `${this.props.id}_group` : null}>
       {control}
